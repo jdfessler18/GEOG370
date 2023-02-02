@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>In this project I learned how to display images in different projections</h1>
+    
+    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
+    <p>I displayed the map in different projections using QGIS by clicking in the bottom right of the screen on the ESRI button and changing to the projection I wanted via search in the window that popped up.  After doing this, I used the indicatrix plugin to add layers displaying the distortions.  I then went to the print layout section of QGIS and added the name of each projection and resized it accordingly, and exported each as an image.</p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>There is distortion of shape and size near the poles, also it seems that the mercator projection can't display the poles due to limitations of the cylinder shape. Directions and angles seem accurate, especially in the parts other than the poles.</h3>
+    <a href=".//4326.png">
+    <img src=".//4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>The size of locations is more accurate than in the mercator, but there is still size distoration near the poles. It also seems that direction is curved near the edges especially, with the United States at an incorrect angle.</h3>
+    <a href=".//54043.png">
+    <img src=".//54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
+    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
+    <h2>WGS84 - Pseudo Mercator Projection</h2>
+    <h3>Similar to the mercator, the poles can't be accurately depicted due to the limitations of a cylinder. Size is highly distorted near the poles, but unlike the traditional mercator, shape is preserved.  Direction and angles also are accurate.</h3>
+    <a href=".//3857.png">
+    <img src=".//3857.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Sphere Winkel I Projection</h2>
+    <h3>Size distortion near the poles seems to be minimized, and shape distortion seems to be a non-issue.  Curving near the high absolute longitudes is an issue, however, with incorrect directions and angles.</h3>
+    <a href=".//53018.png">
+    <img src=".//53018.png" width='500px'>
+    </a>
+    <h2>World Cylindrical Equal Area Projection</h2>
+    <h3>Area and size seem to be prserved well, shape is definitely distorted near the poles.  Direction and angles seem accurate as well.</h3>
+    <a href=".//53034.png">
+    <img src=".//53034.png" width='500px'>
+    </a>
+    <h2>World Equidistant Conic</h2>
+    <h3>Shape and size is distorted at the south pole, which also can't be fully seen using this projection.  Higher lattitudes display accurately it seems in size and shape, but direction is a limitation of this map as the circular shape limits its applications.  Also the triangular cutout at the top is a limitation.</h3>
+    <a href=".//54027.png">
+    <img src=".//54027.png" width='500px'>
+    </a>
+    <h2>North Pole Azimuthal Equidistant Projection</h2>
+    <h3>Once again, the south pole is heavily skewed in size and shape, and the circular shape of the map limits its applications.  There is no triangular cutout at the top, so the map is a complete circle, which makes it easier on the eyes.  It also prevers shape and size well at higher lattitudes.</h3>
+    <a href=".//102016.png">
+    <img src=".//102016.png" width='500px'>
+    </a>
+    <h2>World Polyconic Projection</h2>
+    <h3>Shape and size is relatively accurate throughout, except on the very outer edges of the map. Direction and angles of the map are distorted due to the curves of the shape of the map and also the shape is a little bit distracting.</h3>
+    <a href=".//54021.png">
+    <img src=".//54021.png" width='500px'>
+    </a>
+    <h2>World Robinson Projection</h2>
+    <h3>Limitations of this map include that direction and angles are once again distorted near the outside of this map.  There is some shape and size distortion at the poles, but it is minimized making this an almost ideal projection for some applications, as it is very visually appealing.</h3>
+    <a href=".//54030.png">
+    <img src=".//54030.png" width='500px'>
+    </a>
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
